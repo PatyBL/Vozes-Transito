@@ -1,0 +1,159 @@
+            Organização de um RONALDO.
+
+VOZES EM TRÂNSITO — ANOTAÇÕES DO PROJETO
+========================================
+
+[0] ORGANIZAÇÃO
+----------------
+[X] Definir estrutura de pastas
+[ ] Separar imagens
+[ ] Separar fontes e ícones
+[ ] Organizar arquivos
+
+[1] CSS GLOBAL
+-------------
+[ ] Criar arquivo CSS compartilhado
+[ ] Separar todas as cores em variáveis
+[ ] Definir fontes e tamanhos
+[ ] Definir estilos gerais
+[ ] Criar componentes compartilhados
+    ├─ Navbar
+    ├─ Botões
+    ├─ Cards
+    ├─ Títulos
+    └─ Footer
+
+
+[2] INDEX
+---------
+[ ] Navbar
+[ ] Hero
+    ├─ Título
+    ├─ Subtítulo
+    ├─ Imagem principal
+    └─ Botão "Conheça o projeto"
+[ ] Sobre o projeto
+[ ] Objetivo
+[ ] Conceitos centrais
+[ ] Trilhas de Vozes
+[ ] Outros produtos
+[ ] Destaques
+[ ] Footer
+
+
+[3] O PROJETO
+-------------
+[ ] Introdução
+[ ] Problemática
+[ ] Objetivo geral
+[ ] Objetivos específicos
+[ ] Contexto de Camaçari
+[ ] 2 de Julho
+[ ] Fogo Simbólico
+
+
+[4] PESQUISA
+------------
+[ ] Apresentação da pesquisa
+[ ] Memória e território
+[ ] Mulheres negras
+[ ] Populações tradicionais
+[ ] Oralidade
+[ ] Variação linguística
+[ ] Fontes e registros
+
+
+[5] CONCEITOS
+-------------
+[ ] Memória
+[ ] Linguagem
+[ ] Território
+[ ] Oralidade
+[ ] Amefricanidade
+[ ] Pretuguês
+[ ] Corpo-Território
+[ ] Corpo-Quilombo
+[ ] Julho das Pretas
+
+
+[6] TRILHAS DE VOZES
+--------------------
+[ ] Apresentação do jogo
+[ ] Objetivo
+[ ] Proposta
+[ ] Componentes
+[ ] Categorias
+[ ] Como jogar
+[ ] Desafios
+[ ] Uso do inglês
+[ ] Encerramento
+[ ] Imagens do jogo
+
+
+[7] PRODUTOS
+------------
+[ ] Trilhas de Vozes
+[ ] Site
+[ ] PDF / Manual
+
+
+[8] PROCESSO
+------------
+[ ] Pesquisa
+[ ] Planejamento
+[ ] Desenvolvimento
+[ ] Protótipos
+[ ] Testes
+[ ] Registros
+[ ] Resultado final
+
+
+[9] EQUIPE
+----------
+[ ] Integrantes
+[ ] Funções
+[ ] Divisão entre áreas
+[ ] Créditos
+
+
+[10] HABILIDADES
+---------------
+[ ] SESI.EM13LGG401.a.29
+    → Linguagem, textos, oralidade e contexto
+
+[ ] SESI.EM13LGG403.s.31
+    → Uso funcional do inglês
+
+[ ] SESI.EM13LGG703.s.45
+    → Linguagens, mídias e ferramentas digitais
+
+
+[11] FINALIZAÇÃO
+---------------
+[ ] Responsividade
+[ ] Acessibilidade
+[ ] Revisão dos textos
+[ ] Revisão visual
+[ ] Conferir imagens
+[ ] Conferir links
+[ ] Testar todas as páginas
+[ ] Conferir Console
+[ ] Publicar no GitHub Pages
+
+
+========================================
+ORDEM DE DESENVOLVIMENTO
+
+01. Organização
+02. CSS Global
+03. Index
+04. O Projeto
+05. Pesquisa
+06. Conceitos
+07. Trilhas de Vozes
+08. Produtos
+09. Processo
+10. Equipe
+11. Habilidades
+12. Finalização
+========================================
