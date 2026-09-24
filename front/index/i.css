@@ -8,3 +8,55 @@
 body{
     background-color: var(--branco);
 }
+
+.card {
+    background-color: var(--bege);
+    margin-top: 110px;
+    width: 100vw;
+    height: 37vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+    
+    overflow-x: auto; 
+    -webkit-overflow-scrolling: touch; 
+}
+
+#baner {
+    width: 110vw;
+    height: 100%;
+    object-fit: cover;
+    
+    flex-shrink: 0; 
+}
+
+#logo{
+    width: 20vw;
+    height: 18vh;
+    flex-shrink: 0;
+
+    position: absolute;
+    top: 10px;
+}
+
+/* Compensação de Espaço de Encosto do Card para Celular */
+@media screen and (max-width: 768px) {
+    .card {
+        margin-top: 140px;
+        height: auto;
+        min-height: 180px;
+    }
+
+    #logo {
+        width: 25vw;
+        height: auto;
+    }
+
+    #baner {
+        width: 728px; 
+        height: 170px; 
+    }
+}

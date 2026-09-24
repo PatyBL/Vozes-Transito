@@ -33,11 +33,15 @@ sendo assim, apenas com um compartilhamento eu poderei fazer tudo funcionar.*/
     max-width: 100vw;
     margin: 0;
 
+    position: fixed;
+    top:0px;
+
     display: flex;
     justify-content: space-between; 
     align-items: center;
 
     box-sizing: border-box;
+    z-index: 1000;
 }
 
 .navbar h1{
@@ -179,4 +183,56 @@ sendo assim, apenas com um compartilhamento eu poderei fazer tudo funcionar.*/
 .navbar h2:hover {
     transform: scale(1.02) translateX(-5px);
     box-shadow: 10px 10px 10px 10px lightgray;
+}
+
+/* Ajustes de Parâmetros exclusivamente para Celulares (iPhone, Android, Safari Mobile) */
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 12px 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .navbar h1 {
+        left: 20px;
+        font-size: 1.2rem;
+    }
+
+    .navbar h1 span {
+        font-size: 30px;
+    }
+
+    .navbar img {
+        width: 26px;
+        height: 26px;
+        left: -24px;
+        bottom: 4px;
+    }
+
+    .navbar ul {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 6px 12px;
+        margin-right: 0;
+    }
+
+    .it, .it-malia {
+        font-size: 14px;
+        width: auto;
+        height: auto;
+        padding: 4px 6px;
+    }
+
+    .jogo h2 {
+        width: 130px;
+        height: 32px;
+        font-size: 14px;
+    }
+
+    .jogo span {
+        top: 6px;
+        left: -30px;
+    }
 }
