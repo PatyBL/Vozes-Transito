@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
 }
-
 body{
     background-color: var(--branco);
 }
@@ -12,8 +11,57 @@ body{
 .card {
     background-color: var(--bege);
     margin-top: 110px;
-    width: 100vw;
-    height: 37vh;
+    height: 40vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+    
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch; 
+}
+#baner {
+    width: 99vw;
+    height: 40vh;
+    object-fit: cover;
+    
+    flex-shrink: 0; 
+}
+#logo{
+    width: 20vw;
+    height: 18vh;
+    flex-shrink: 0;
+
+    position: absolute;
+    top: 10px;
+}
+
+
+
+.project{
+    background-color: var(--bege);
+    margin-top: 110px;
+    height: 40vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+    
+    overflow-x: auto; 
+    -webkit-overflow-scrolling: touch;  
+}
+
+
+
+.conceitos{
+    background-color: var(--bege);
+    margin-top: 110px;
+    height: 40vh;
 
     display: flex;
     align-items: center;
@@ -25,22 +73,43 @@ body{
     -webkit-overflow-scrolling: touch; 
 }
 
-#baner {
-    width: 110vw;
-    height: 100%;
-    object-fit: cover;
+
+
+.produtos{
+    background-color: var(--bege);
+    margin-top: 110px;
+    height: 40vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
     
-    flex-shrink: 0; 
+    overflow-x: auto; 
+    -webkit-overflow-scrolling: touch; 
 }
 
-#logo{
-    width: 20vw;
-    height: 18vh;
-    flex-shrink: 0;
 
-    position: absolute;
-    top: 10px;
+
+.team{
+    background-color: var(--bege);
+    margin-top: 110px;
+    height: 40vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+    
+    overflow-x: auto; 
+    -webkit-overflow-scrolling: touch; 
 }
+
+
+
+
 
 /* Compensação de Espaço de Encosto do Card para Celular */
 @media screen and (max-width: 768px) {

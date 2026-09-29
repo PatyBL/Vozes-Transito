@@ -7,7 +7,6 @@ function ajustarMargem() {
         // Aplica como margin-top no card
     card.style.marginTop = (alturaNavbar) + 'px'; 
 }
-
     // Executa quando a página carrega
 window.addEventListener('load', ajustarMargem);
     // Executa se o usuário mudar o tamanho da tela (o que muda a altura da navbar)

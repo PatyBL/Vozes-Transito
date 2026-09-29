@@ -6,17 +6,17 @@ VOZES EM TRÂNSITO — ANOTAÇÕES DO PROJETO
 [0] ORGANIZAÇÃO
 ----------------
 [X] Definir estrutura de pastas
-[ ] Separar imagens
+[O] Separar imagens
 [ ] Separar fontes e ícones
 [ ] Organizar arquivos
 
 [1] CSS GLOBAL
 -------------
-[ ] Criar arquivo CSS compartilhado
-[ ] Separar todas as cores em variáveis
-[ ] Definir fontes e tamanhos
-[ ] Definir estilos gerais
-[ ] Criar componentes compartilhados
+[X] Criar arquivo CSS compartilhado
+[X] Separar todas as cores em variáveis
+[X] Definir fontes e tamanhos
+[X] Definir estilos gerais
+[X] Criar componentes compartilhados
     ├─ Navbar
     ├─ Botões
     ├─ Cards
@@ -26,7 +26,7 @@ VOZES EM TRÂNSITO — ANOTAÇÕES DO PROJETO
 
 [2] INDEX
 ---------
-[ ] Navbar
+[X] Navbar
 [ ] Hero
     ├─ Título
     ├─ Subtítulo
