@@ -8,6 +8,8 @@ body{
     background-color: var(--branco);
 }
 
+
+
 .card {
     background-color: var(--bege);
     margin-top: 110px;
@@ -41,19 +43,113 @@ body{
 
 
 
-.project{
-    background-color: var(--bege);
-    margin-top: 110px;
-    height: 40vh;
+.project {
+    background-color: var(--verde-claro);
+    width: 100%;
+    min-height: 40vh;
+    padding: 3vh 4vw;
 
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+
+    box-sizing: border-box;
 
     position: relative;
+
+    text-align: center;
+
+    box-shadow: 0 3vh 40px 30px var(--verde-claro);
+}
+.flutuar-1{
+    width: 10%;
+    height: 20%;
+    position: absolute;
+
+    top:13%;
+    right:4%;
+    transform: rotate(-30deg);
+}
+.flutuar-2{
+    width: 10%;
+    height: 20%;
+    position: absolute;
+
+    bottom:13%;
+    left:4%;
+    transform: rotate(30deg);
+}
+.project h1 {
+    color: rgba(158, 60, 24, 0.837);
+    margin-bottom:5vh;
+
+    font-weight: bold;
+    font-size: 40px;
+    font-family: var(--titulo-fonte);
+
+    animation: entrada-CimaBaixo .8s .8s ease backwards;
+}
+
+.project .parts {
+    width: 100%;
+    max-width: 80vw;
+
+    display: flex;
+    align-items: stretch;
+}
+.parts div{
+    width: 100%;
+    max-height: 60%;
+    display: flex;
+    flex-direction: column;
+    gap:4%;
+
+    animation: entrada-BaixoCima .8s .8s ease backwards;
+}
+.parts h2{
+    color: var(--verde);
     
-    overflow-x: auto; 
-    -webkit-overflow-scrolling: touch;  
+    font-size: 29px;
+    margin-bottom: 3vh;
+
+}
+.parts p {
+    flex: 1;
+
+    margin: 0;
+    padding: 0 3vw;
+
+    color: white;
+    font-size: 24px;
+    text-align: left;
+}
+/* linhas brancas*/
+.parts div:not(:last-child) {
+    border-right: 3px solid var(--verde);
+}
+
+/*Hover, Active and etc*/
+@keyframes entrada-BaixoCima {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes entrada-CimaBaixo {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 
@@ -111,7 +207,7 @@ body{
 
 
 
-/* Compensação de Espaço de Encosto do Card para Celular */
+/*Transferir para mobile é dificil*/
 @media screen and (max-width: 768px) {
     .card {
         margin-top: 140px;
@@ -127,5 +223,33 @@ body{
     #baner {
         width: 728px; 
         height: 170px; 
+    }
+    
+    .project {
+        min-height: auto;
+        padding: 4vh 5vw 5vh;
+    }
+
+    .project h1 {
+        margin-bottom: 4vh;
+        font-size: 32px;
+    }
+
+    .project h2 {
+        margin-bottom: 2vh;
+        font-size: 21px;
+    }
+
+    .project .parts {
+        align-items: stretch;
+    }
+
+    .parts p {
+        padding: 0 4vw;
+        font-size: 18px;
+    }
+
+    .parts p:not(:last-child) {
+        border-right: 2px solid white;
     }
 }

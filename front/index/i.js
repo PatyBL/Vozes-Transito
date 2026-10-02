@@ -11,3 +11,5 @@ function ajustarMargem() {
 window.addEventListener('load', ajustarMargem);
     // Executa se o usuário mudar o tamanho da tela (o que muda a altura da navbar)
 window.addEventListener('resize', ajustarMargem);
+
+
