@@ -2,6 +2,7 @@
 const navbar = document.querySelector('.navbar');
 const card = document.querySelector('.card');
 const buttonNavBar = document.getElementById('btn-nav');
+const lista = document.querySelector('.lista');
 const it = document.querySelectorAll('.it');
 
 //coloca o nome certo no butão =====================================
@@ -68,3 +69,12 @@ function _malia(it_malia, element){
 
 //executa quando a página carrega ==================================
 window.addEventListener('load', buttonName);
+
+//executa quando clica no button declarado na variavel buttonNavBar=
+buttonNavBar.addEventListener('click', menuMobile);
+
+function menuMobile() {
+    buttonNavBar.style.backgroundColor = "var(--verde)";
+    lista.classList.toggle('open');
+}
+

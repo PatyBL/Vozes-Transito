@@ -71,27 +71,21 @@ sendo assim, apenas com um compartilhamento eu poderei fazer tudo funcionar.*/
     left: -37px;
 }
 
-.navbar .lista button {
-    justify-content: center;
-    align-items: center;
-
-    background-color: var(--verde-claro);
-    font-family: var(--atencao-font);
-
-    cursor: pointer;
-
-    transition: 0.1s linear;
+#menu-mobile {
+    display: none;
 }
 
-.lista button:hover + .navbar 
+#btn-nav {
+    display: none;
+}
 
-.navbar ul{
+.navbar ul {
     display: flex;
     flex-direction: row;
-    list-style: none;
     gap: 25px;
-    margin-right: 25px;
 
+    margin-right: 25px;
+    list-style: none;
 }
 
 .navbar li{
@@ -212,14 +206,6 @@ sendo assim, apenas com um compartilhamento eu poderei fazer tudo funcionar.*/
         font-size: 30px;
     }
 
-    .lista button {
-        display: flex;
-
-        width: 130px;
-        height: 32px;
-        font-size: 14px;
-    }
-
     .navbar img {
         width: 26px;
         height: 26px;
@@ -227,15 +213,54 @@ sendo assim, apenas com um compartilhamento eu poderei fazer tudo funcionar.*/
         bottom: 4px;
     }
 
+    #btn-nav {
+        position: fixed;
+        top: 1vh;
+        left: 42vw;
+
+        width: 130px;
+        height: 32px;
+        padding: 6px 0;
+        border-radius: 10px 10px 0 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: var(--verde-claro);
+        font-family: var(--atencao-font);
+
+        font-size: 20px;
+
+        cursor: pointer;
+    }
+
     .navbar ul {
         display: none;
+    }
 
-        width: 100%;
+    
+    .lista.open ul {
+        width: 130px;
+        left:42vw;
+        top: 5.1vh;
+
+        background-color: var(--verde);
+        position: absolute;
+        padding-bottom: 10px;
+        border-radius: 0 0 10px 10px;
+
+        display: flex;
         flex-direction: column;
         justify-content: center;
         flex-wrap: wrap;
         gap: 6px 12px;
         margin-right: 0;
+    }
+
+    .navbar li {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
     }
 
     .it, .it-malia {
