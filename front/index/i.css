@@ -9,7 +9,6 @@ body{
 }
 
 
-
 .card {
     background-color: var(--bege);
     margin-top: 110px;
@@ -60,24 +59,6 @@ body{
     text-align: center;
 
     box-shadow: 0 3vh 40px 30px var(--verde-claro);
-}
-.flutuar-1{
-    width: 10%;
-    height: 20%;
-    position: absolute;
-
-    top:13%;
-    right:4%;
-    transform: rotate(-30deg);
-}
-.flutuar-2{
-    width: 10%;
-    height: 20%;
-    position: absolute;
-
-    bottom:13%;
-    left:4%;
-    transform: rotate(30deg);
 }
 .project h1 {
     color: rgba(158, 60, 24, 0.837);
@@ -219,11 +200,6 @@ body{
         width: 25vw;
         height: auto;
     }
-
-    #baner {
-        width: 728px; 
-        height: 170px; 
-    }
     
     .project {
         min-height: auto;
@@ -241,6 +217,7 @@ body{
     }
 
     .project .parts {
+        flex-direction: column;
         align-items: stretch;
     }
 
@@ -249,7 +226,13 @@ body{
         font-size: 18px;
     }
 
-    .parts p:not(:last-child) {
-        border-right: 2px solid white;
+    .parts div:not(:last-child) {
+        border-right: 0;
+        border-bottom: 2px solid white;
+        padding-bottom: 5px;
+    }
+
+    .parts div {
+        margin-bottom: 10vh;
     }
 }

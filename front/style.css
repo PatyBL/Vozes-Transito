@@ -15,6 +15,8 @@ sendo assim, apenas com um compartilhamento eu poderei fazer tudo funcionar.*/
     --verde-claro: rgba(21, 71, 56, 0.5);
     --bege: rgba(235, 219, 184, 1);
     --titulo-fonte: "Limelight", sans-serif;
+    --corpo-font: 'Inter', -apple-system, BlinkMacSystemFont;
+    --atencao-font: 'Anton', sans-serif;
 
 }
 
@@ -24,6 +26,7 @@ sendo assim, apenas com um compartilhamento eu poderei fazer tudo funcionar.*/
 * {
     margin: 0;
     padding: 0;
+    font-style: var(--corpo-font);
 }
 
 .navbar {
@@ -47,6 +50,7 @@ sendo assim, apenas com um compartilhamento eu poderei fazer tudo funcionar.*/
 
 .navbar h1{
     font-family: var(--titulo-fonte);
+    font-size: 35px;
     position: relative;
     left: 45px;
 
@@ -67,8 +71,22 @@ sendo assim, apenas com um compartilhamento eu poderei fazer tudo funcionar.*/
     left: -37px;
 }
 
+.navbar .lista button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--verde-claro);
+    font-family: var(--atencao-font);
+
+    cursor: pointer;
+
+    transition: 0.1s linear;
+}
+
 .navbar ul{
     display: flex;
+    flex-direction: row;
     list-style: none;
     gap: 25px;
     margin-right: 25px;
@@ -180,17 +198,25 @@ sendo assim, apenas com um compartilhamento eu poderei fazer tudo funcionar.*/
     .navbar {
         padding: 12px 10px;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-between;
         gap: 10px;
     }
 
     .navbar h1 {
         left: 20px;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .navbar h1 span {
         font-size: 30px;
+    }
+
+    .lista button {
+        display: flex;
+
+        width: 130px;
+        height: 32px;
+        font-size: 14px;
     }
 
     .navbar img {
@@ -201,7 +227,10 @@ sendo assim, apenas com um compartilhamento eu poderei fazer tudo funcionar.*/
     }
 
     .navbar ul {
+        display: none;
+
         width: 100%;
+        flex-direction: column;
         justify-content: center;
         flex-wrap: wrap;
         gap: 6px 12px;

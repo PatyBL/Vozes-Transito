@@ -15,19 +15,37 @@
 
     </head>
 
-    <body>
+    <body class="inicio">
         <!-- ===============================================================
             NAVBAR
         ================================================================ -->
         <header class="navbar">
             <h1><img src="front/imagens/tracinhos.avif"> <span>V</span>ozes Em Transito</h1>
-            <ul>
-                <li href="#" class="it-malia">Inicio</li>
-                <li class="it">Projeto</li>
-                <li class="it">Conceitos</li>
-                <li class="it">Produtos</li>
-                <li class="it">Equipe</li>
-            </ul>
+            <div class="lista">
+                <button id="btn-nav"></button>   
+                <ul>
+                    <li 
+                        id="inicio" class="it-malia" onclick="windowPosition(this)">
+                        Inicio
+                    </li>
+                    <li 
+                        id="project" class="it" onclick="windowPosition(this)">
+                        Projeto
+                    </li>
+                    <li 
+                        id="conceitos" class="it" onclick="windowPosition(this)">
+                        Conceitos
+                    </li>
+                    <li 
+                        id="produtos" class="it" onclick="windowPosition(this)">
+                        Produtos
+                    </li>
+                    <li 
+                        id="team" class="it" onclick="windowPosition(this)">
+                        Equipe
+                    </li>
+                </ul>
+            </div>
             <div class="jogo">
                 <h2> Sankofa </h2>
             </div>
@@ -45,11 +63,6 @@
         ================================================================ -->
         <section class="project">
             <h1>Memória, Linguagem e Território nas Trilhas de Camaçari</h1>
-
-            <!--Imagens que vão ficar flutuando-->
-            <img class="flutuar-1" src="front/imagens/coracoes.avif">
-            <img class="flutuar-2" src="front/imagens/resistencia.avif">
-
 
             <div class="parts">
 
