@@ -72,7 +72,6 @@ sendo assim, apenas com um compartilhamento eu poderei fazer tudo funcionar.*/
 }
 
 .navbar .lista button {
-    display: flex;
     justify-content: center;
     align-items: center;
 
@@ -83,6 +82,8 @@ sendo assim, apenas com um compartilhamento eu poderei fazer tudo funcionar.*/
 
     transition: 0.1s linear;
 }
+
+.lista button:hover + .navbar 
 
 .navbar ul{
     display: flex;
