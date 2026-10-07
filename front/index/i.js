@@ -15,6 +15,8 @@ function buttonName() {
 //move até a tela e modifica quem está escolhido como -malia =======
 function windowPosition(element) {
     //variáveis
+    lista.classList.remove('open');
+
     const id = element.id;
     const section = document.querySelector(`section.${id}`);
     const it_malia = document.querySelector('.it-malia');
@@ -51,6 +53,7 @@ function windowPosition(element) {
     });
 
     _malia(it_malia, element);
+    lista.classList.remove('menu-aberto');
 }
 
 function _malia(it_malia, element){
@@ -74,7 +77,45 @@ window.addEventListener('load', buttonName);
 buttonNavBar.addEventListener('click', menuMobile);
 
 function menuMobile() {
-    buttonNavBar.style.backgroundColor = "var(--verde)";
     lista.classList.toggle('open');
 }
 
+//vai ficxar verificando para mudar o nome se não usarem os titulos.
+function buttonScroll() {
+    const meioTela = window.innerHeight / 2;
+
+    const itens = document.querySelectorAll('.navbar li');
+
+    if (window.scrollY <= 10) {
+        buttonNavBar.textContent = 'Inicio';
+
+        const inicio = document.getElementById('inicio');
+        const it_malia = document.querySelector('.it-malia');
+
+        if (inicio) {
+            _malia(it_malia, inicio);
+        }
+
+        return;
+    }
+
+    itens.forEach(function(item) {
+
+        const id = item.id;
+        const section = document.querySelector(`section.${id}`);
+
+        if (!section) return;
+
+        const posicao = section.getBoundingClientRect();
+
+        if (posicao.top <= meioTela && posicao.bottom >= meioTela) {
+            buttonNavBar.textContent = item.textContent;
+
+            const it_malia = document.querySelector('.it-malia');
+
+            _malia(it_malia, item);
+        }
+    });
+}
+
+window.addEventListener('scroll', buttonScroll);
