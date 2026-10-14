@@ -8,7 +8,7 @@ VOZES EM TRÂNSITO — ANOTAÇÕES DO PROJETO
 [X] Definir estrutura de pastas
 [O] Separar imagens
 [ ] Separar fontes e ícones
-[ ] Organizar arquivos
+[X] Organizar arquivos
 
 [1] CSS GLOBAL
 -------------
@@ -27,7 +27,7 @@ VOZES EM TRÂNSITO — ANOTAÇÕES DO PROJETO
 [2] INDEX
 ---------
 [X] Navbar
-[ ] Sobre o projeto
+[X] Sobre o projeto
 [ ] Objetivo
 [ ] Conceitos centrais
 [ ] Trilhas de Vozes
@@ -85,12 +85,9 @@ VOZES EM TRÂNSITO — ANOTAÇÕES DO PROJETO
 [ ] Imagens do jogo
 
 
-[7] PRODUTOS
+[7] REVISÃO
 ------------
-[ ] Trilhas de Vozes
-[ ] Site
-[ ] PDF / Manual
-
+[ ] Revisão
 
 [8] PROCESSO
 ------------

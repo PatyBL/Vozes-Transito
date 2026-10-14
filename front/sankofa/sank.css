@@ -1,1 +1,46 @@
 @import url("../style.css");
+
+.regras {
+    background-color: var(--bege);
+    margin-top: 110px;
+    height: 40vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+    
+    overflow-x: auto; 
+    -webkit-overflow-scrolling: touch;
+}
+
+.mapa {
+    background-color: var(--bege);
+    margin-top: 110px;
+    height: 40vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+    
+    overflow-x: auto; 
+    -webkit-overflow-scrolling: touch;
+}
+
+.jogar {
+    background-color: var(--bege);
+    margin-top: 110px;
+    height: 40vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+    
+    overflow-x: auto; 
+    -webkit-overflow-scrolling: touch;
+}
