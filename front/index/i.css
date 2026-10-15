@@ -24,7 +24,7 @@ body{
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch; 
 }
-#baner {
+.baner {
     width: 99vw;
     height: 40vh;
     object-fit: cover;
@@ -60,6 +60,7 @@ body{
 
     box-shadow: 0 3vh 40px 30px var(--verde-claro);
 }
+
 .project h1 {
     color: rgba(158, 60, 24, 0.837);
     margin-bottom:5vh;
@@ -68,7 +69,10 @@ body{
     font-size: 40px;
     font-family: var(--titulo-fonte);
 
+}
+.project h1.visivel {
     animation: entrada-CimaBaixo .8s .8s ease backwards;
+
 }
 
 .project .parts {
@@ -85,8 +89,12 @@ body{
     flex-direction: column;
     gap:4%;
 
-    animation: entrada-BaixoCima .8s .8s ease backwards;
 }
+.parts div.visivel {
+    animation: entrada-BaixoCima .8s .8s ease backwards;
+
+}
+
 .parts h2{
     color: var(--verde);
     
@@ -138,17 +146,40 @@ body{
 .conceitos{
     background-color: var(--bege);
     margin-top: 110px;
-    height: 40vh;
+
+    position: relative;
+ 
+    -webkit-overflow-scrolling: touch; 
+}
+
+.conceitos h1 {
+    position: absolute;
+    left: 36.7%;
+    
+
+    color: rgba(158, 60, 24, 0.837);
+    margin-bottom: 5vh;
+
+    font-weight: bold;
+    font-size: 40px;
+    font-family: var(--titulo-fonte);
+
+    opacity: 0;
+}
+.conceitos h1.visivel {
+    animation: entrada-CimaBaixo .8s ease both;
+}
+
+.lista-conceitos {
+    padding: 4vh 2vw;
+    background-color: var(--branco);
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
-
-    position: relative;
-    
-    overflow-x: auto; 
-    -webkit-overflow-scrolling: touch; 
+    justify-content: space-around;
 }
+
+
 
 
 

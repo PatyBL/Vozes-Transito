@@ -194,13 +194,6 @@ sendo assim, apenas com um compartilhamento eu poderei fazer tudo funcionar.*/
         overflow-x: auto;
     }
 
-    #baner {
-        width: 135vw;
-        max-width: none;
-        height: auto;
-        object-fit: contain;
-    }
-
     .navbar {
         padding: 10px 3vw;
         flex-wrap: wrap;
@@ -228,7 +221,7 @@ sendo assim, apenas com um compartilhamento eu poderei fazer tudo funcionar.*/
 
     #btn-nav {
         position: fixed;
-        top: 4vh;
+        top: 8vh;
         left: 50%;
         transform: translateX(-50%);
 
