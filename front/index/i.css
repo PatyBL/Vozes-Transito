@@ -147,21 +147,21 @@ body{
     background-color: var(--bege);
     margin-top: 110px;
 
-    position: relative;
+    position: static;
  
     -webkit-overflow-scrolling: touch; 
 }
 
 .conceitos h1 {
     position: absolute;
-    left: 36.7%;
-    
+    left: 35.7%;
+    top: 126.7vh;
 
     color: rgba(158, 60, 24, 0.837);
     margin-bottom: 5vh;
 
     font-weight: bold;
-    font-size: 40px;
+    font-size: 46px;
     font-family: var(--titulo-fonte);
 
     opacity: 0;
@@ -177,6 +177,76 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
+
+    box-shadow: 0 0 40px 10px lightgray;
+}
+.lista-conceitos.visivel{
+    animation: entrada-BaixoCima .8s ease both;
+}
+
+.lista-conceitos .sub {
+    display: flex;
+    flex-direction: column;
+
+    transition: .3s ease;
+}
+.sub:hover{
+    transform: scale(1.04);
+}
+
+.sub  h2{
+    background-color: var(--laranja);
+    padding: 3%;
+    border-radius: 12px 12px 0 0;
+
+    text-align: center;
+    font-size: 36px;
+}
+
+.lista-conceitos .sub-son{
+    background-color: var(--verde-claro);
+    padding: 3%;
+    border-radius: 0 0 12px 12px;
+    position: static;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2vw;
+}
+
+.conceito {
+    margin-top: 8vh;
+
+    background-color: var(--branco-escuro);
+    width: 20vw;
+    min-height: 14vh;
+    padding: 4%;
+    border-radius: 16.7px;
+
+    font-size: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    transition: .3s ease;
+}
+.conceito:hover{
+    transform: translateY(-4px) scale(1.03);
+}
+
+.conceito img {
+
+}
+
+.conceito h2{
+    background-color: transparent;
+
+    font-family: var(--atencao-font);
+    font-size: 26px;
+    margin-bottom: 2vh;
 }
 
 

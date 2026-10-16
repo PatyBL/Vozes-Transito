@@ -123,14 +123,16 @@ window.addEventListener('scroll', buttonScroll);
 
 //Muito chato fazer isso aqui de vizualização de objeto na tela, mas eu sei como funciona (Só não sei escrever...)
 const elementos = document.querySelectorAll(
-    '.conceitos h1, .parts div, .project h1'
+    '.conceitos h1, .parts div, .project h1, .lista-conceitos'
 );
 
 const observador = new IntersectionObserver((entradas, observador) => {
     entradas.forEach((entrada) => {
         if (entrada.isIntersecting) {
             entrada.target.classList.add('visivel');
-            observador.unobserve(entrada.target);
+        }
+        else {
+            entrada.target.classList.remove('visivel');
         }
     });
 }, {
