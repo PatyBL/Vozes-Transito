@@ -147,7 +147,7 @@ body{
     background-color: var(--bege);
     margin-top: 110px;
 
-    position: static;
+    position: relative;
  
     -webkit-overflow-scrolling: touch; 
 }
@@ -155,7 +155,7 @@ body{
 .conceitos h1 {
     position: absolute;
     left: 35.7%;
-    top: 126.7vh;
+    top: 6.7vh;
 
     color: rgba(158, 60, 24, 0.837);
     margin-bottom: 5vh;
