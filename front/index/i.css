@@ -312,6 +312,7 @@ body{
         height: auto;
     }
     
+    /*Projeto abaixo*/
     .project {
         min-height: auto;
         padding: 4vh 5vw 5vh;
@@ -345,5 +346,37 @@ body{
 
     .parts div {
         margin-bottom: 10vh;
+    }
+
+    /*Conceitos aqui*/
+    .conceitos {
+        margin-top: 140px;
+    }
+
+    .lista-conceitos .sub-son{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conceito{
+        max-width: 80vw;
+    }
+
+    .conceitos h1 {
+        left: 4.7%;
+        top: 6.7vh;
+        font-size: 32px;
+    }
+
+    .lista-conceitos {
+        padding: 3vh 4vw;
+        flex-direction: column;
+        gap: 4vh;
+    }
+
+    .lista-conceitos .sub {
+        min-width: 100%;
+        width: 100%;
     }
 }
