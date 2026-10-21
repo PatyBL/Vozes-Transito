@@ -154,8 +154,8 @@ body{
 
 .conceitos h1 {
     position: absolute;
-    left: 35.7%;
-    top: 6.7vh;
+    left: 14.7%;
+    top: 10.7vh;
 
     color: rgba(158, 60, 24, 0.837);
     margin-bottom: 5vh;
@@ -169,6 +169,12 @@ body{
 .conceitos h1.visivel {
     animation: entrada-CimaBaixo .8s ease both;
 }
+@media(max-width:1204px){
+    .conceitos h1 {
+        left: 4.7%;
+        top: 6.7vh;
+    }
+}
 
 .lista-conceitos {
     padding: 4vh 2vw;
@@ -177,6 +183,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    gap: 2vw;
 
     box-shadow: 0 0 40px 10px lightgray;
 }
@@ -185,11 +192,14 @@ body{
 }
 
 .lista-conceitos .sub {
+    min-width: 45%;
+
     display: flex;
     flex-direction: column;
 
     transition: .3s ease;
 }
+
 .sub:hover{
     transform: scale(1.04);
 }
@@ -207,19 +217,19 @@ body{
     background-color: var(--verde-claro);
     padding: 3%;
     border-radius: 0 0 12px 12px;
-    position: static;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:2vw;
 }
 
 .conceito {
-    margin-top: 8vh;
+    margin-top: 3vh;
 
     background-color: var(--branco-escuro);
-    width: 20vw;
+    min-width: 20vw;
+    max-width: 23vw;
+    overflow-wrap: break-word; 
     min-height: 14vh;
     padding: 4%;
     border-radius: 16.7px;
@@ -227,8 +237,8 @@ body{
     font-size: 20px;
 
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
 
     transition: .3s ease;
