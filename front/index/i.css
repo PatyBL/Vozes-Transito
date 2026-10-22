@@ -9,6 +9,41 @@ body{
 }
 
 
+/*Hover, Active and etc*/
+@keyframes entrada-BaixoCima {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes entrada-CimaBaixo {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes entrada-EsquerdaDireita{
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 .card {
     background-color: var(--bege);
     margin-top: 110px;
@@ -30,6 +65,9 @@ body{
     object-fit: cover;
     
     flex-shrink: 0; 
+}
+.baner.visivel{
+    animation: entrada-EsquerdaDireita .8s .8s ease backwards;
 }
 #logo{
     width: 20vw;
@@ -117,29 +155,6 @@ body{
     border-right: 3px solid var(--verde);
 }
 
-/*Hover, Active and etc*/
-@keyframes entrada-BaixoCima {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-@keyframes entrada-CimaBaixo {
-    from {
-        opacity: 0;
-        transform: translateY(-30px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
 
 
@@ -285,6 +300,7 @@ body{
 }
 
 .produtos h1{
+    width: 30vw;
     position: absolute;
     left: 14.7%;
     top: 10.7vh;
@@ -301,6 +317,7 @@ body{
 }
 
 .produtos .textos {
+    margin: 4vh 2vw;
     width: 100%;
     max-width: 80vw;
 
@@ -319,7 +336,9 @@ body{
 }
 
 .textos img{
-    
+    width: 6vw;
+    height: 10vh;
+    margin-left: 42.3%;
 }
 .textos h2{
     color: var(--verde);
