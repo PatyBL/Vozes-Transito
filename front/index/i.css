@@ -9,40 +9,7 @@ body{
 }
 
 
-/*Hover, Active and etc*/
-@keyframes entrada-BaixoCima {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-@keyframes entrada-CimaBaixo {
-    from {
-        opacity: 0;
-        transform: translateY(-30px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-@keyframes entrada-EsquerdaDireita{
-    from {
-        opacity: 0;
-        transform: translateX(-30px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
 
 .card {
     background-color: var(--bege);
@@ -66,7 +33,7 @@ body{
     
     flex-shrink: 0; 
 }
-.baner.visivel{
+.baner.visivel {
     animation: entrada-EsquerdaDireita .8s .8s ease backwards;
 }
 #logo{
@@ -262,10 +229,6 @@ body{
     transform: translateY(-4px) scale(1.03);
 }
 
-.conceito img {
-
-}
-
 .conceito h2{
     background-color: transparent;
 
@@ -332,7 +295,7 @@ body{
     gap:4%;
 }
 .textos div.visivel{
-    animation: entrada-BaixoCima .8s .8s ease backwards;
+    animation: entrada-BaixoCima .8s ease backwards;
 }
 
 .textos img{
@@ -356,7 +319,7 @@ body{
     font-size: 24px;
     text-align: left;
 }
-/* linhas brancas*/
+/* linhas verdes*/
 .textos div:not(:last-child) {
     border-right: 3px solid var(--verde);
 }
@@ -462,5 +425,37 @@ body{
     .lista-conceitos .sub {
         min-width: 100%;
         width: 100%;
+    }
+
+    /*aba de Produtos*/
+    .produtos {
+        padding: 0 4vw 4vh 4vw;
+        min-height: 40vh;
+    }
+
+    .produtos h1 {
+        width: 90%;
+        left: 4.7%;
+        top: 6.7vh;
+        font-size: 32px;
+    }
+
+    .produtos .textos {
+        margin: 16vh 0 3vh 0;
+        width: 100%;
+        max-width: 100%;
+        flex-direction: column;
+        gap: 4vh;
+    }
+
+    .textos div:not(:last-child) {
+        padding-bottom: 2vh;
+        border-bottom: 3px solid var(--verde);
+        border-right: none;
+    }
+
+    .textos img {
+        width: 15vw;
+        height: 13vh;
     }
 }

@@ -4,6 +4,83 @@
 /*Aqui eu irei guardar todas as cores e comandos mais basicos como a da navbar
 sendo assim, apenas com um compartilhamento eu poderei fazer tudo funcionar.*/
 
+/*Minhas animações*/
+@keyframes entrada-BaixoCima {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes entrada-CimaBaixo {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes entrada-EsquerdaDireita{
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes entrada-DireitaEsquerda{
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes cascata-descer{
+    0%{
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    50%{
+        transform: translateX(5px);
+        opacity: 0.7;
+    }
+
+    100%{
+        transform: translateY(0px) translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes cascata-subir{
+    0%{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    50%{
+        transform: translateX(-5px);
+        opacity: 0.7;
+    }
+
+    100%{
+        transform: translateY(0px) translateX(0px);
+        opacity: 1;
+    }
+}
 
 
 
@@ -90,7 +167,7 @@ sendo assim, apenas com um compartilhamento eu poderei fazer tudo funcionar.*/
 }
 
 .navbar li{
-    animation: descer 0.4s linear 0s 1 backwards;
+    animation: cascata-subir 0.4s linear 0s 1 backwards;
 }
 
 .navbar ul li:nth-child(1) { animation-delay: 0.0s; }
@@ -101,22 +178,6 @@ sendo assim, apenas com um compartilhamento eu poderei fazer tudo funcionar.*/
 .navbar ul li:nth-child(6) { animation-delay: 0.5s; }
 .navbar ul li:nth-child(7) { animation-delay: 0.6s; }
 
-@keyframes descer{
-    0%{
-        transform: translateY(-50px);
-        opacity: 0;
-    }
-
-    50%{
-        transform: translateX(5px);
-        opacity: 0.7;
-    }
-
-    100%{
-        transform: translateY(0px) translateX(0px);
-        opacity: 1;
-    }
-}
 
 .it{
     font-size: 20px;
