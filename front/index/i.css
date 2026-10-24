@@ -34,7 +34,7 @@ body{
     flex-shrink: 0; 
 }
 .baner.visivel {
-    animation: entrada-EsquerdaDireita .8s .8s ease backwards;
+    animation: entrada-EsquerdaDireita .8s .4s ease backwards;
 }
 #logo{
     width: 20vw;
@@ -162,9 +162,8 @@ body{
     padding: 4vh 2vw;
     background-color: var(--branco);
 
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 2vw;
 
     box-shadow: 0 0 40px 10px lightgray;
