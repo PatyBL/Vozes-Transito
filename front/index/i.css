@@ -6,6 +6,7 @@
 }
 body{
     background-color: var(--branco);
+    overflow-x: hidden;
 }
 
 
@@ -262,7 +263,7 @@ body{
 }
 
 .produtos h1{
-    width: 30vw;
+    width: 40vw;
     position: absolute;
     left: 14.7%;
     top: 10.7vh;
@@ -295,6 +296,18 @@ body{
 }
 .textos div.visivel{
     animation: entrada-BaixoCima .8s ease backwards;
+}
+
+.baner-transicao{
+    width: 99vw;
+    padding: 15vh 0vw;
+    height: 40vh;
+    object-fit: cover;
+    
+    flex-shrink: 0; 
+}
+.baner-transicao.visivel{
+    animation: entrada-BaixoCima .8s .3s ease backwards;
 }
 
 .textos img{
