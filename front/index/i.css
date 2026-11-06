@@ -412,8 +412,8 @@ body{
     width: 4vw;
     height: 4vh;
 
-    border-radiis: 50%;
-    border: 1px solid dark;
+    border-radius: 50%;
+    border: 1px solid black;
 }
 
 
