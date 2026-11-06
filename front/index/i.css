@@ -394,24 +394,13 @@ body{
 }
 
 .integrante.visivel{
-    animation: cascata-subir .8s ease backwards;
+    animation: cascata-subir .8s .3s ease backwards;
 }
-
-.integrante.visivel ul li:nth-child(1) { animation-delay: 0.0s; }
-.integrante.visivel ul li:nth-child(2) { animation-delay: 0.2s; }
-.integrante.visivel ul li:nth-child(3) { animation-delay: 0.3s; }
-.integrante.visivel ul li:nth-child(4) { animation-delay: 0.4s; }
-.integrante.visivel ul li:nth-child(5) { animation-delay: 0.5s; }
-.integrante.visivel ul li:nth-child(6) { animation-delay: 0.6s; }
-.integrante.visivel ul li:nth-child(7) { animation-delay: 0.7s; }
-.integrante.visivel ul li:nth-child(8) { animation-delay: 0.8s; }
-.integrante.visivel ul li:nth-child(9) { animation-delay: 0.9s; }
-.integrante.visivel ul li:nth-child(10) { animation-delay: 0.99s; }
 
 /*Luiz passou por aqui*/
 .integrante img{
     width: 4vw;
-    height: 6.57vh;
+    height: 10vh;
 
     border-radius: 50%;
     border: 1px solid black;
