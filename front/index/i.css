@@ -394,7 +394,7 @@ body{
 }
 
 .integrante.visivel{
-    animation: cascata-subir .8s .2s ease backwards;
+    animation: cascata-subir .8s ease backwards;
 }
 
 .integrante.visivel ul li:nth-child(1) { animation-delay: 0.0s; }
@@ -408,7 +408,13 @@ body{
 .integrante.visivel ul li:nth-child(9) { animation-delay: 0.9s; }
 .integrante.visivel ul li:nth-child(10) { animation-delay: 0.99s; }
 
+.integrante img{
+    width: 4vw;
+    height: 4vh;
 
+    border-radiis: 50%;
+    border: 1px solid dark;
+}
 
 
 /*Transferir para mobile é dificil*/
