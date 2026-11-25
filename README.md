@@ -1,3 +1,8 @@
+Este projeto eu aprofundei meu conhecimento em NavBar, com um sistema de JS que interage em tempo real com a posição da tela e @MediQuery para um suporte Mobile. 
+
+
+
+
 # Vozes em Trânsito
 
 <p align="center">
